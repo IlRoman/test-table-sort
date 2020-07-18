@@ -72,6 +72,8 @@ const App = () => {
                     ? result = obj.data.sort(descendingSort)
                     : result = obj.data.sort(ascendingSort)
                 break;
+            default:
+                return
         }
         setObj({ ...obj, result });
         setSign(!signIsPlus);
